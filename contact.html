@@ -24,15 +24,15 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li class="navbar_li_dropdown">
                         <a href="about.html">Notre Maison</a>
-                        <ul>
+                        <ul id="ul_1">
                             <li><a href="about.html">Historique</a></li>
                             <li><a href="about.html">Actualités</a></li>
                         </ul>
                     </li>
                     <li class="navbar_li_dropdown">
                         <a href="products.html">Nos Produits</a>
-                        <ul>
-                            <li><a href="products.html">Chocolats et tablettes</a></li>
+                        <ul id="ul_2">
+                            <li><a href="products.html">Chocolats - tablettes</a></li>
                             <li><a href="products.html">Patisseries</a></li>
                             <li><a href="products.html">Coffrets</a></li>
                         </ul>
@@ -47,30 +47,31 @@
     </header>
 
     <section id="contact_information">
-        <h2>Nos coordonnées</h2>
-        <div>
-            <p>M. Gérard Chocolat</p>
-            <p>+33 xxx xxx xxx</p>
-            <p>1 Rue du chocolat, 44 000 Nantes</p>
+        <div class="position_items_info">
+            <h2>Nos coordonnées</h2>
+            <div class="info">
+                <p>M. Gérard Chocolat</p>
+                <p>+33 xxx xxx xxx</p>
+                <p>1 Rue du chocolat, 44 000 Nantes</p>
+            </div>
         </div>
+        <div id="googleMap" class="position_items_info"></div>
     </section>
 
     <section id="contact_form">
         <h2>Contactez nous</h2>
-        <fieldset>
-            <legend>A vous de jouer:</legend>
-            <form action="#" method="POST">
-                <div>
-                    <label for="fullName"></label>
-                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
-                </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="johndoe@email.fr" required>
-                </div>
-                <div>
-                    <label for="selectValue"></label>
-                    <select name="selectValue" id="selectReason">
+        <form action="#" method="POST">
+            <div>
+                <label for="fullName"></label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="johndoe@email.fr" required>
+            </div>
+            <div>
+                <label for="selectValue"></label>
+                <select name="selectValue" id="selectReason">
                         <optgroup label="selectReason">
                             <option value="0">Selectionnez la raison du contact</option>
                             <option value="1">Raison 1</option>
@@ -79,16 +80,15 @@
                             <option value="4">Raison 4</option>
                         </optgroup>
                     </select>
-                </div>
-                <div>
-                    <label for="yourMessage"></label>
-                    <textarea name="yourMessage" id="yourMessage" cols="30" rows="10" placeholder="Write your message"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Send !</button>
-                </div>
-            </form>
-        </fieldset>
+            </div>
+            <div>
+                <label for="yourMessage"></label>
+                <textarea name="yourMessage" id="yourMessage" cols="30" rows="10" placeholder="Write your message"></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
     </section>
 
     <footer>
@@ -115,10 +115,10 @@
                 <p>1 Rue du chocolat - 44 000 Nantes</p>
                 <p>+33 xxx xxx xxx</p>
                 <div id="container_social">
-                    <a href="#"><img class="logo" src="" alt="logo de Facebook"></a>
-                    <a href="#"><img class="logo" src="" alt="logo de Twitter"></a>
-                    <a href="#"><img class="logo" src="" alt="logo d'Instagram"></a>
-                    <a href="#"><img class="logo" src="" alt="logo du mail"></a>
+                    <a href="#"><img class="logo" src="images/logos/facebook.svg" alt="logo de Facebook"></a>
+                    <a href="#"><img class="logo" src="images/logos/twitter.svg" alt="logo de Twitter"></a>
+                    <a href="#"><img class="logo" src="images/logos/instagram.svg" alt="logo d'Instagram"></a>
+                    <a href="#"><img class="logo" src="images/logos/envelope.svg" alt="logo du mail"></a>
                 </div>
             </div>
         </div>
