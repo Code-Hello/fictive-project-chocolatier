@@ -22,6 +22,10 @@ a {
     color: #f2f1f0;
 }
 
+section {
+    margin: 2rem 0;
+}
+
 
 /*Header*/
 
@@ -69,6 +73,7 @@ div.navbar_container {
 
 nav#navbar_header {
     float: left;
+    width: 100%;
 }
 
 nav#navbar_header ul {
@@ -165,10 +170,6 @@ div#container_social {
     text-align: center;
 }
 
-section#main_article {
-    margin: 2em 0;
-}
-
 section#main_article article {
     width: 75%;
     height: inherit;
@@ -191,7 +192,7 @@ section#main_article div.main_article_img img {
 section#main_article div.main_article_content {
     position: absolute;
     background-color: #bab7b4;
-    overflow: scroll;
+    overflow: auto;
     opacity: 0.8;
     top: 70%;
     left: 25%;
@@ -200,7 +201,6 @@ section#main_article div.main_article_content {
 }
 
 section#main_news {
-    margin: 5rem 0;
     display: flex;
     justify-content: center;
 }
@@ -259,7 +259,6 @@ div#main_news_container div.article_content h3 a {
 /* ABOUT PAGE */
 
 section#story {
-    margin: 2rem 0;
     padding: 2em;
 }
 
@@ -295,7 +294,6 @@ section#story div.main_article_content p {
 section#news {
     display: flex;
     flex-direction: column;
-    margin: 3em 0;
     padding: 2em;
 }
 
@@ -377,7 +375,7 @@ section#catalog div.wrap_product_item {
 
 section#catalog div.product_img_container,
 section#catalog div.product_content {
-    margin: 2em 0em;
+    margin: 1em 0em;
 }
 
 section#catalog img.product_img {
@@ -429,7 +427,6 @@ section#contact_information {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    margin: 3em;
 }
 
 section#contact_information div.position_items_info {
@@ -442,11 +439,11 @@ section#contact_information div#googleMap {
 
 section#contact_information h2,
 section#contact_information p {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 section#contact_form h2 {
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 section#contact_form {
@@ -462,7 +459,7 @@ section#contact_form form {
     flex-direction: column;
     width: 90vw;
     max-width: 700px;
-    margin: 3em;
+    margin: 1em;
 }
 
 section#contact_form form input,
@@ -506,9 +503,165 @@ section#contact_form form select {
 /* ------------------ SMARTPHONE -----------------*/
 
 @media only screen and (max-width: 768px) {
-    /* GENERAL */
-    /* HOME PAGE */
-    /* ABOUT PAGE */
-    /* PRODUCTS PAGE */
-    /* CONTACT PAGE */
+    /* - GENERAL - */
+    .logo_container {
+        align-self: center;
+        min-width: 300px;
+    }
+    header {
+        padding: O 2em;
+    }
+    /*Navbar*/
+    nav#navbar_header ul {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Footer*/
+    footer {
+        background-color: #0d0c0b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    footer div.footer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer div.position_items_footer,
+    footer div#container_social {
+        width: 100%;
+    }
+    footer div.position_items_footer:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* - HOME PAGE - */
+    /*Main article*/
+    section#main_article {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+    }
+    section#main_article article {
+        display: block;
+        padding: 1em;
+    }
+    section#main_article div.main_article_img {
+        width: 100%;
+        text-align: center;
+    }
+    section#main_article div.main_article_img img {
+        width: 75%;
+    }
+    section#main_article div.main_article_content {
+        top: 65%;
+        left: auto;
+    }
+    /*News*/
+    section#main_news {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+    }
+    div#main_news_container {
+        width: 75%;
+    }
+    div#main_news_container article {
+        display: flex;
+        flex-direction: column;
+    }
+    div#main_news_container div.article_news_img {
+        width: auto;
+        max-width: 50%;
+        align-self: center;
+        padding: 1em;
+    }
+    div#main_news_container .article_news,
+    div#main_news_container .article_news_revert {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+    /* - ABOUT PAGE - */
+    section#story {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+    }
+    section#story article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section#story div.main_article_img {
+        width: 70%;
+    }
+    section#story div.main_article_content {
+        width: 90%;
+    }
+    section#news .article_news {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: O;
+    }
+    section#news div.article_news_img {
+        width: auto;
+        max-width: 50%;
+    }
+    section#news div.article_content {
+        width: auto;
+    }
+    section#news div.article_content p.article_date {
+        align-self: center;
+    }
+    /* - PRODUCTS PAGE - */
+    section#catalog ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    section#catalog li.products_item {
+        width: 100%;
+        margin: auto;
+    }
+    section#catalog div.product_content h4,
+    section#catalog div.product_content p,
+    section#catalog div.product_content div {
+        margin: 0.5em;
+    }
+    /* - CONTACT PAGE - */
+    section#contact_information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section#contact_information div.position_items_info {
+        width: 80%;
+    }
+    section#contact_information h2,
+    section#contact_information p {
+        padding-bottom: 0.5em;
+    }
+    section#contact_form h2 {
+        padding: 0;
+        margin: 0.5em;
+    }
+    section#contact_form form input,
+    section#contact_form form select,
+    section#contact_form form textarea {
+        margin-bottom: 1em;
+    }
+    section#contact_form div:last-child {
+        align-self: center;
+    }
 }
